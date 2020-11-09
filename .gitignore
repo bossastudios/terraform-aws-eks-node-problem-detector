@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore Terraform working directories and Terraform State files.
+**/.terraform
+**/terraform.tfstate*
+**/terraform.plan
+**/terraform.tfvars
+!bootstrap/terraform.tfstate
+**/terraform.auto.tfvars
+**/errored.tfstate
+**/generated
+**/crash.log
+**/out.hcl
+**/out.tfstate
+**/out.state
+**/out.graph
+!**/.auto.tfvars
+**/changed_resources.txt
+
+# Ignore Terraform outputs
+**/config-map-aws-auth_*.yaml
+**/kubeconfig_*
+
+# Ignore VSCode files
+**/.vscode
+**/.code-workspace
+
+### Ignore JetBrains files
+!**/.idea
